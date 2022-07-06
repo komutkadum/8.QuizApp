@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App - Add Question</title>
+    <link rel="icon" href="quiz.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-light">
+
+    <div class="container mt-5">
+
+        <div class="row">
+            <div class="col-2"></div><!-- blank space for the bottom div to display in middle-->
+    
+            <div class="col-8">
+                <div class="card">
+                    <div class="card-header bg-primary">
+                      <input type="text" id="addquestion-question" class="form-control" placeholder="type your question?">
+                    </div>
+                    <div class="card-body bg-light">
+                        <div style="display:grid;grid-gap:10px;" class="mb-2">
+                            <input type="text" id="addquestion-input1" class="form-control" placeholder="type option1">
+                            <input type="text" id="addquestion-input2" class="form-control" placeholder="type option2">
+                            <input type="text" id="addquestion-input3" class="form-control" placeholder="type option3">
+                            <input type="text" id="addquestion-input4" class="form-control" placeholder="type option4">
+                        </div>
+                        <select name="" id="addquestion-select" class="form-control">
+                            <option>select the correct option</option>
+                            <option value="1">option1</option>
+                            <option value="2">option2</option>
+                            <option value="3">option3</option>
+                            <option value="4">option4</option>
+                        </select>
+                    </div>
+                    <div class="card-footer bg-white">
+                        <div style="display:flex;justify-content: space-between;">
+                            <button class="btn btn-secondary" onclick="window.location.replace('index.html')">&#10094; Home</button>
+                            <button class="btn" id="addquestion-total"></button>
+                            <button class="btn btn-success" onclick="addquestionAdd()">
+                                Add question &#10010;
+                            </button>
+                        </div>
+                    </div>
+                  </div>
+            </div>
+    
+        </div><!-- end of row -->
+    
+    </div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="index.js"></script>
+</body>
+</html>
